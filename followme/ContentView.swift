@@ -5,8 +5,13 @@ struct ContentView: View {
 	@ObservedObject var locationManager = LocationManager()
 
 	var body: some View {
-		Map(coordinateRegion: $locationManager.mapRegion, showsUserLocation: true)
-			.edgesIgnoringSafeArea(.all)
+		VStack{
+			Map(coordinateRegion: $locationManager.mapRegion, showsUserLocation: true, annotationItems: locationManager.coordinates) { item in
+				MapAnnotation(coordinate: item.coordinate) {
+					Circle().foregroundColor(.red)
+				}
+			}.edgesIgnoringSafeArea(.all)
+		}
 	}
 }
 

@@ -1,13 +1,19 @@
 import MapKit
 import CoreLocation
 
+//IdentifiableCoordinate 用于将坐标显示到地图上（需要遵循Identifiable协议）
+struct IdentifiableCoordinate: Identifiable {
+	var id = UUID()
+	var coordinate: CLLocationCoordinate2D
+}
+
 //LocationManager用于定位相关的功能，作为CLLocationManager的delegate对象
 class LocationManager: NSObject, CLLocationManagerDelegate, ObservableObject  {
-	@Published var mapRegion: MKCoordinateRegion
+	@Published var mapRegion = MKCoordinateRegion()
+	@Published var coordinates: [IdentifiableCoordinate] = []
 	private var locationManager = CLLocationManager()
 
 	override init() {
-		self.mapRegion = MKCoordinateRegion()
 		super.init()
 		locationManager.delegate = self
 		locationManager.requestAlwaysAuthorization()
@@ -25,5 +31,8 @@ class LocationManager: NSObject, CLLocationManagerDelegate, ObservableObject  {
 			latitudinalMeters: 1000,
 			longitudinalMeters: 1000
 		)
+
+		let newCoordinates = locations.map{ IdentifiableCoordinate(coordinate: $0.coordinate) }
+		self.coordinates.append(contentsOf: newCoordinates)
 	}
 }
