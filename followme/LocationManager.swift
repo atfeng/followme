@@ -25,6 +25,8 @@ class LocationManager: NSObject, CLLocationManagerDelegate, ObservableObject  {
 			self.coordinates.append(contentsOf: historyCoordinates)
 		}
 		locationManager.delegate = self
+		locationManager.pausesLocationUpdatesAutomatically = false
+		locationManager.allowsBackgroundLocationUpdates = true
 		locationManager.requestAlwaysAuthorization()
 		locationManager.startUpdatingLocation()
 	}

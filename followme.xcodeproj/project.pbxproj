@@ -17,6 +17,7 @@
 
 /* Begin PBXFileReference section */
 		9A178D4329F3EAC0000CB51C /* Followme.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Followme.xcdatamodel; sourceTree = "<group>"; };
+		9A178D4529F3F2D6000CB51C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		9A1E3EE929F3B03400F17B88 /* followme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = followme.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A1E3EEC29F3B03400F17B88 /* followmeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = followmeApp.swift; sourceTree = "<group>"; };
 		9A1E3EEE29F3B03400F17B88 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -55,6 +56,7 @@
 		9A1E3EEB29F3B03400F17B88 /* followme */ = {
 			isa = PBXGroup;
 			children = (
+				9A178D4529F3F2D6000CB51C /* Info.plist */,
 				9A178D4229F3EAC0000CB51C /* Followme.xcdatamodeld */,
 				9A1E3EEC29F3B03400F17B88 /* followmeApp.swift */,
 				9A1E3EEE29F3B03400F17B88 /* ContentView.swift */,
@@ -277,6 +279,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"followme/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = followme/Info.plist;
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "我们需要定位权限，以便于获取并记录您的位置";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "我们需要定位权限，以便于获取并记录您的位置";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -307,6 +310,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"followme/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = followme/Info.plist;
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "我们需要定位权限，以便于获取并记录您的位置";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "我们需要定位权限，以便于获取并记录您的位置";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
