@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A178D4429F3EAC0000CB51C /* Followme.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9A178D4229F3EAC0000CB51C /* Followme.xcdatamodeld */; };
 		9A1E3EED29F3B03400F17B88 /* followmeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1E3EEC29F3B03400F17B88 /* followmeApp.swift */; };
 		9A1E3EEF29F3B03400F17B88 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1E3EEE29F3B03400F17B88 /* ContentView.swift */; };
 		9A1E3EF129F3B03500F17B88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A1E3EF029F3B03500F17B88 /* Assets.xcassets */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9A178D4329F3EAC0000CB51C /* Followme.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Followme.xcdatamodel; sourceTree = "<group>"; };
 		9A1E3EE929F3B03400F17B88 /* followme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = followme.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A1E3EEC29F3B03400F17B88 /* followmeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = followmeApp.swift; sourceTree = "<group>"; };
 		9A1E3EEE29F3B03400F17B88 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,6 +55,7 @@
 		9A1E3EEB29F3B03400F17B88 /* followme */ = {
 			isa = PBXGroup;
 			children = (
+				9A178D4229F3EAC0000CB51C /* Followme.xcdatamodeld */,
 				9A1E3EEC29F3B03400F17B88 /* followmeApp.swift */,
 				9A1E3EEE29F3B03400F17B88 /* ContentView.swift */,
 				9A1E3EFA29F3D98800F17B88 /* LocationManager.swift */,
@@ -142,6 +145,7 @@
 			files = (
 				9A1E3EEF29F3B03400F17B88 /* ContentView.swift in Sources */,
 				9A1E3EED29F3B03400F17B88 /* followmeApp.swift in Sources */,
+				9A178D4429F3EAC0000CB51C /* Followme.xcdatamodeld in Sources */,
 				9A1E3EFB29F3D98800F17B88 /* LocationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -345,6 +349,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9A178D4229F3EAC0000CB51C /* Followme.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9A178D4329F3EAC0000CB51C /* Followme.xcdatamodel */,
+			);
+			currentVersion = 9A178D4329F3EAC0000CB51C /* Followme.xcdatamodel */;
+			path = Followme.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 9A1E3EE129F3B03400F17B88 /* Project object */;
 }
