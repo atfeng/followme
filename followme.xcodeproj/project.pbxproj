@@ -11,6 +11,7 @@
 		9A1E3EEF29F3B03400F17B88 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1E3EEE29F3B03400F17B88 /* ContentView.swift */; };
 		9A1E3EF129F3B03500F17B88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A1E3EF029F3B03500F17B88 /* Assets.xcassets */; };
 		9A1E3EF429F3B03500F17B88 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A1E3EF329F3B03500F17B88 /* Preview Assets.xcassets */; };
+		9A1E3EFB29F3D98800F17B88 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1E3EFA29F3D98800F17B88 /* LocationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		9A1E3EEE29F3B03400F17B88 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9A1E3EF029F3B03500F17B88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9A1E3EF329F3B03500F17B88 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9A1E3EFA29F3D98800F17B88 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				9A1E3EEC29F3B03400F17B88 /* followmeApp.swift */,
 				9A1E3EEE29F3B03400F17B88 /* ContentView.swift */,
+				9A1E3EFA29F3D98800F17B88 /* LocationManager.swift */,
 				9A1E3EF029F3B03500F17B88 /* Assets.xcassets */,
 				9A1E3EF229F3B03500F17B88 /* Preview Content */,
 			);
@@ -139,6 +142,7 @@
 			files = (
 				9A1E3EEF29F3B03400F17B88 /* ContentView.swift in Sources */,
 				9A1E3EED29F3B03400F17B88 /* followmeApp.swift in Sources */,
+				9A1E3EFB29F3D98800F17B88 /* LocationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +273,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"followme/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "我们需要定位权限，以便于获取并记录您的位置";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "我们需要定位权限，以便于获取并记录您的位置";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -297,6 +303,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"followme/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "我们需要定位权限，以便于获取并记录您的位置";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "我们需要定位权限，以便于获取并记录您的位置";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
