@@ -2,14 +2,10 @@ import SwiftUI
 import MapKit
 
 struct ContentView: View {
-	@State private var mapRegion = MKCoordinateRegion(
-		center: CLLocationCoordinate2D(latitude: 30.568744,
-									   longitude: 104.063402),
-		latitudinalMeters: 1000,
-		longitudinalMeters: 1000
-	)
+	@ObservedObject var locationManager = LocationManager()
+
 	var body: some View {
-		Map(coordinateRegion: $mapRegion)
+		Map(coordinateRegion: $locationManager.mapRegion, showsUserLocation: true)
 			.edgesIgnoringSafeArea(.all)
 	}
 }
