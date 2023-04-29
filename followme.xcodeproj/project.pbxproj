@@ -274,6 +274,8 @@
 				DEVELOPMENT_TEAM = P6V99RS9SN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "随迹";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.travel";
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "我们需要定位权限，以便于获取并记录您的位置";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "我们需要定位权限，以便于获取并记录您的位置";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -308,6 +310,8 @@
 				DEVELOPMENT_TEAM = P6V99RS9SN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "随迹";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.travel";
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "我们需要定位权限，以便于获取并记录您的位置";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "我们需要定位权限，以便于获取并记录您的位置";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
